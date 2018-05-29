@@ -1,0 +1,3 @@
+const LIST_PROJECTS = 'LIST_PROJECTS';
+
+export { LIST_PROJECTS };

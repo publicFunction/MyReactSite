@@ -1,0 +1,24 @@
+@import "../../sass/colors";
+
+.Add-Project-Holder {
+  display: flex;
+  flex: 0 0 auto;
+  margin-top: auto;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-end;
+  .Add-Project {
+    width: 100%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.Project-Form {
+  background-color: $white;
+  padding: 1.5rem;
+  width: 115%;
+  height: auto;
+  margin-left: 4rem;
+}

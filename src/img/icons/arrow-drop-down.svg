@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <polygon id="ic_arrow_drop_down_24px-a" points="7 10 12 15 17 10"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(0 -.5)">
+    <mask id="ic_arrow_drop_down_24px-b" fill="#fff">
+      <use xlink:href="#ic_arrow_drop_down_24px-a"/>
+    </mask>
+    <use fill="#000" fill-rule="nonzero" xlink:href="#ic_arrow_drop_down_24px-a"/>
+    <g fill="#FFF" mask="url(#ic_arrow_drop_down_24px-b)">
+      <rect width="24" height="24"/>
+    </g>
+    <polygon points="0 0 24 0 24 24 0 24"/>
+  </g>
+</svg>

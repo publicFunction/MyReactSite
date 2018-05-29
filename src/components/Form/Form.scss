@@ -1,0 +1,33 @@
+@import "./../../sass/colors";
+
+.Form { }
+
+.Form-Element {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid $labelDefault;
+
+  label {
+    display: inline-block;
+    width: 100%;
+    color: $labelDefault;
+  }
+
+  input {
+    margin: 1rem 0;
+    color: $inputDefault;
+    font-weight: 600;
+    font-size: 1em;
+    ::placeholder {
+      color: $inputDefault;
+    }
+  }
+
+  select {
+    margin: 1rem 0;
+    color: $inputDefault;
+    font-weight: 600;
+    font-size: 1em;
+  }
+
+}

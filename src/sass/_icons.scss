@@ -1,0 +1,32 @@
+.icons {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: 100% 100%;
+  background-position: center center;
+  image-rendering: auto;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  margin-right: 0.5rem;
+  display: inline-block;
+  vertical-align: middle;
+  &.add-circle-outline {
+    mask-image: url('./img/icons/create/add-circle-outline.svg');
+    -webkit-mask-image: url('./img/icons/create/add-circle-outline.svg');
+    background-color: $white;
+  }
+  &.drop-arrow {
+    mask-image: url('./img/icons/arrow-drop-down.svg');
+    -webkit-mask-image: url('./img/icons/arrow-drop-down.svg');
+    background-color: $white;
+    &.active {
+
+    }
+    &.inactive {
+
+    }
+  }
+}

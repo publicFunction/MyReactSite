@@ -1,0 +1,57 @@
+@import './../../sass/colors';
+
+.Sidebar {
+  height: 100vh;
+  min-width: 15vw;
+  background-color: transparent;
+  padding: 1rem;
+  color: $white;
+  display: flex;
+  flex: 0 0 10%;
+  flex-direction: column;
+
+  h1.Sidebar-title {
+    margin: 1rem 0;
+  }
+
+  .Sidebar-Organisations {
+    margin: 2rem 1rem;
+    .Organisation {
+      margin-bottom: 2rem;
+      position: relative;
+      .Name {
+        font-weight: 800;
+        margin-left: 1em;
+        &.Header {
+          height: auto;
+          font-weight: 700;
+          font-size: 1.25em;
+          padding: 0;
+          margin: 0;
+        }
+      }
+      .icons {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .Projects {
+        margin-top: 0.5rem;
+        .Project {
+          margin: 0 0 0.5rem 2rem;
+          color: $subMenuText;
+          &.active {
+            color: $white;
+          }
+          &:hover {
+            cursor: pointer;
+          }
+          /*&:first-child {
+            color: $white;
+          }*/
+        }
+      }
+    }
+  }
+
+}

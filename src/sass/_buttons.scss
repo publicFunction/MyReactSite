@@ -1,0 +1,13 @@
+button {
+  min-width: 3rem;
+  border: none;
+  background-color: $containerDefault;
+  padding: 1rem 2rem;
+  color: $white;
+  font-weight: 700;
+  margin: 0 1rem;
+  font-size: 1em;
+  &:focus {
+    outline: none;
+  }
+}

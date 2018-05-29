@@ -1,0 +1,41 @@
+.Header {
+  background-color: transparent;
+  height: 8vh;
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  flex: 0 0 100%;
+  .Header-Menu {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 85%;
+    align-content: flex-start;
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex: 0 0 100%;
+      &> li {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 15%;
+        justify-content: space-evenly;
+        align-content: flex-start;
+        text-align: center;
+      }
+    }
+  }
+  .Header-Logo {
+    display: inline-block;
+    flex-direction: column;
+    flex: 0 0 15%;
+    align-content: flex-end;
+    background: url('./../../img/general/header/xdesign-logo.svg') no-repeat center transparent;
+    width: 12rem;
+    height: 100%;
+  }
+}
+
+.Header-title {
+  font-size: 1.5em;
+}

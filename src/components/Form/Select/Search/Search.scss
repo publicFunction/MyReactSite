@@ -1,0 +1,29 @@
+.searchHolder {
+  padding: 1rem;
+  background-color: firebrick;
+  position: relative;
+  width: 100%;
+  max-width: 20vw;
+  min-width: 10vw;
+}
+
+.selectOptions {
+  background-color: firebrick;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  &.show {
+    display: block;
+  }
+}
+
+input {
+  width: 100%;
+}
+ul {
+  &> li {
+    display: block;
+  }
+}
