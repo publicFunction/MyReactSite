@@ -1,0 +1,15 @@
+@import "../../sass/colors";
+
+.Card {
+  background-color: transparent;
+  width: 30vw;
+  height: 30vh;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+  border: 3px solid darkslateblue;
+  border-radius: 1rem;
+}

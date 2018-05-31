@@ -1,6 +1,6 @@
 .Header {
   background-color: transparent;
-  height: 8vh;
+  height: 10vh;
   width: 100%;
   padding: 1rem;
   color: white;
@@ -33,6 +33,13 @@
     background: url('./../../img/general/header/xdesign-logo.svg') no-repeat center transparent;
     width: 12rem;
     height: 100%;
+  }
+  .Header-Baseline {
+    border-bottom: 3px solid firebrick;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex: 0 0 85%;
   }
 }
 

@@ -5,10 +5,10 @@ import Select from '../Form/Select/Select';
 // import projectsService from './../../../services/projects';
 import organisationService from '../../services/organisations/index';
 
-import './AddProject.css';
+import './Button.css';
 import './../../Form/Form.css';
 
-class AddProject extends Component {
+class Button extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -103,4 +103,4 @@ class AddProject extends Component {
   }
 }
 
-export default AddProject;
+export default Button;
