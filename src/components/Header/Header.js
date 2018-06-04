@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import BaseLine from './../BaseLine/BaseLine';
 
 import './Header.css';
 
@@ -6,7 +7,7 @@ class Header extends Component {
   render() {
     return (
       <header className="Header">
-        <span className="Header-Baseline" />
+        <BaseLine inverted={false} />
       </header>
     );
   }

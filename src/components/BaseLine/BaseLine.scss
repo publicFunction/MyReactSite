@@ -1,0 +1,50 @@
+@import './../../sass/colors';
+
+.Baseline {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  justify-content: space-between;
+  background-color: transparent;
+  .BaseLine-Start {
+    width: 1rem;
+    border-bottom: 5px solid $baseTextColor;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    margin: 0;
+    flex: 0 0 1%;
+    z-index: 1;
+  }
+  .BaseLine-End {
+    width: 1rem;
+    border-bottom: 5px solid $baseTextColor;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    margin: 0;
+    flex: 0 0 1%;
+    z-index: 1;
+  }
+  .Baseline-Main {
+    border-bottom: 3px solid $baseTextColor;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    flex: 1 1 auto;
+    z-index: 1;
+    margin-bottom: 2px;
+  }
+  &.Inverted {
+    .Baseline-Main {
+      margin-bottom: 0;
+    }
+  }
+}

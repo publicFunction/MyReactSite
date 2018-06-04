@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Routes from './../../routes';
+import BaseLine from './../BaseLine/BaseLine';
 
 import './Body.css';
 
@@ -8,6 +9,7 @@ class Body extends Component {
     return (
       <div className="Container">
         <Routes />
+        <BaseLine inverted={true} />
       </div>
     );
   }

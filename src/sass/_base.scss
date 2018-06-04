@@ -11,9 +11,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Averta', 'Roboto', sans-serif;
+  font-family: 'Maven Pro', 'Roboto', sans-serif;
   font-size: 16px;
-  background: radial-gradient(circle at center, $backgroundDefault 0, $containerDefault 100%);
+  background: url('./img/general/background/location-screen.png') no-repeat center transparent;
   color: $white;
   z-index: 0;
 }
@@ -36,30 +36,9 @@ ul {
   list-style: none;
 }
 
-.Background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: url('./img/general/background/background-image.png') no-repeat center transparent;
-  background-size: cover;
-  z-index: -2;
-}
-
-.TheX {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: url('./img/general/background/mark.png') no-repeat center transparent;
-  background-size: 40%;
-  z-index: -1;
-}
-
 .Parent {
   display: flex;
-  flex: auto;
   flex-direction: column;
+  flex:  0 0 auto;
+  width: 90%;
 }

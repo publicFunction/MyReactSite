@@ -2,10 +2,14 @@ $white: rgba(255, 255, 255, 1);
 $black: rgba(0, 0, 0, 1);
 
 // General Colours
-$backgroundDefault: rgba(45, 17, 47, 1);
+$backgroundDefault: rgba(24, 3, 13, .5);
 $containerDefault: rgba(24, 3, 13, 1);
 $labelDefault: rgba(128, 102, 130, 1);
 $inputDefault: rgba(199, 199, 204, 1);
+$baseTextColor: rgba(135, 167, 70, 1);
+$baseTextColorDarker: rgba(62, 129, 75, 1);
+$baseTextBright: rgba(33, 175, 199, 1);
+$darkIconColor: rgba(15, 37, 1, 1);
 
 // Menu Colours
 $menuText: $white;
