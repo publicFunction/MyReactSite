@@ -10,9 +10,9 @@
   flex-direction: column;
   text-align: center;
   padding: 1rem;
-  border: inset 6px solid $darkIconColor;
+  border: inset 3px solid $darkIconColor;
   border-radius: 0.5rem;
-  box-shadow: inset 0 0 0.25rem $baseTextColor;
+  box-shadow: 0 0 0.25rem $baseTextColor;
   div:first-child {
     border-radius: 0.25rem;
     background-color: transparent;
