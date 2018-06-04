@@ -3,6 +3,7 @@ import { routerReducer } from 'react-router-redux';
 import organisationsReducer from './../store/organisations/reducer';
 import projectsReducer from './../store/projects/reducer';
 import errorReducer from './../store/error/reducer';
+import scOrganisationReducer from './../store/scorganisation/reducer';
 
 const initialState = {};
 const rootReducer = (state = initialState, action) => state;
@@ -12,7 +13,8 @@ const appReducers = combineReducers({
   root: rootReducer,
   organisations: organisationsReducer,
   projects: projectsReducer,
-  errors: errorReducer
+  errors: errorReducer,
+  scOrganisations: scOrganisationReducer,
 });
 
 export default appReducers;
