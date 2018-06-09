@@ -26,8 +26,40 @@ class StarCitizenOrg extends Component {
       return (
         <div className={classnames('Star-Citizen-Org', this.props.classes)}>
           <h4>{StringsMix.updateTitle(this.props.classes)}</h4>
-          <h3>{this.state.organisation.title}</h3>
-          <p>{JSON.stringify(this.state.organisation)}</p>
+          <div className="Row">
+            <div className="orgLogo">
+              <img
+                src={this.state.organisation.logo}
+                alt={this.state.organisation.title}
+              />
+            </div>
+            <div className="orgDetails">
+              <h3>
+                {this.state.organisation.title}{' '}
+                <small>{this.state.organisation.archetype}</small>
+              </h3>
+              <ul>
+                <li>
+                  <label>Current Member Count: </label>
+                  <span className="content">
+                    {this.state.organisation.member_count}
+                  </span>
+                </li>
+                <li>
+                  <label>Primary Focus: </label>
+                  <span className="content">
+                    {this.state.organisation.primary_focus}
+                  </span>
+                </li>
+                <li>
+                  <label>Secondary Focus: </label>
+                  <span className="content">
+                    {this.state.organisation.secondary_focus}
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       );
     } else {

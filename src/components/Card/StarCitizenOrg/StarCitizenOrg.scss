@@ -1,7 +1,75 @@
 .Star-Citizen-Org {
-  background-color: limegreen;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
   width: 100%;
   height: 100%;
-  border-radius: 1rem;
   overflow: hidden;
+  text-align: left;
+  .Row {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 1rem;
+  }
+  .orgLogo {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    width: 25%;
+    justify-self: flex-start;
+    margin-right: 1rem;
+    img {
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .orgDetails {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    width: 70%;
+    justify-self: flex-start;
+    h3 {
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      width: 70%;
+      justify-self: flex-start;
+      margin-bottom: 0.5rem;
+      small {
+        display: inline;
+        width: auto;
+        font-size: 0.725em;
+        justify-self: flex-end;
+      }
+    }
+    ul {
+      margin: 1rem 0;
+      &> li {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin: 0.5rem 0;
+        label {
+          font-weight: 700;
+          display: flex;
+          flex: 0 0 auto;
+          flex-direction: column;
+          justify-self: flex-start;
+        }
+        .content {
+          display: flex;
+          flex: 0 0 auto;
+          flex-direction: column;
+          justify-self: flex-end;
+        }
+      }
+    }
+  }
 }

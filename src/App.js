@@ -11,6 +11,10 @@ class App extends Component {
           <Header />
           <Body />
           <Footer />
+          <div className="MobiGlow">
+            <div className="MobiGlowTop" />
+            <div className="MobiGlowBottom" />
+          </div>
         </div>
       </div>
     );

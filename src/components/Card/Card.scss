@@ -3,7 +3,7 @@
 .Card {
   background-color: transparent;
   width: 28vw;
-  height: 28vh;
+  height: 24vh;
   display: inline-flex;
   flex: 0 0 auto;
   justify-content: center;
@@ -13,14 +13,14 @@
   border: inset 3px solid $darkIconColor;
   border-radius: 0.5rem;
   box-shadow: 0 0 0.25rem $baseTextColor;
-  div:first-child {
+  /*div:first-child {
     border-radius: 0.25rem;
     background-color: transparent;
     text-align: left;
     display: flex;
     flex: 0 0 100%;
     flex-direction: column;
-  }
+  }*/
   h4 {
     text-transform: uppercase;
     border-bottom: 2px solid $baseTextColor;
