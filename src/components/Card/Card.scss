@@ -21,6 +21,14 @@
     flex: 0 0 100%;
     flex-direction: column;
   }*/
+  .Row {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 1rem;
+  }
   h4 {
     text-transform: uppercase;
     border-bottom: 2px solid $baseTextColor;

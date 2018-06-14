@@ -10,6 +10,13 @@ const scOrganisationReducer = (state = initialState, action) => {
       };
     case SC.GET_SC_ORGANISATION:
       return state.organisation;
+    case SC.SET_SC_PERSON:
+      return {
+        ...state,
+        person: action.payload.response.data
+      };
+    case SC.GET_SC_PERSON:
+      return state.person;
     default:
       return state;
   }

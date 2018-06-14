@@ -1,6 +1,11 @@
-.Squadron-42 {
-  background-color: olivedrab;
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
+.Card {
+  .Squadron-42 {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: left;
+  }
 }

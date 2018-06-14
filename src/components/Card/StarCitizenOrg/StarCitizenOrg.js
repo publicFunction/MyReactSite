@@ -65,7 +65,12 @@ class StarCitizenOrg extends Component {
     } else {
       return (
         <div className={classnames('Star-Citizen-Org', this.props.classes)}>
-          <p className="error">We are unable to get the data for this panel</p>
+          <h4>{StringsMix.updateTitle(this.props.classes)}</h4>
+          <div className="Row">
+            <p className="error">
+              We are unable to get the data for this panel
+            </p>
+          </div>
         </div>
       );
     }

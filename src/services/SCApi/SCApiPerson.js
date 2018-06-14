@@ -1,9 +1,9 @@
 import Axios from 'axios';
 import store from './../../store';
-import { setSCOrganisation } from './../../store/scorganisation/actions';
+import { setSCPerson } from './../../store/scorganisation/actions';
 
 const success = response => {
-  store.dispatch(setSCOrganisation({ response }));
+  store.dispatch(setSCPerson({ response }));
 };
 const failed = error => {
   return error.data;
@@ -11,7 +11,7 @@ const failed = error => {
 
 export default () => {
   return Axios.get(
-    '//sc-api.com/?api_source=live&system=organizations&action=single_organization&target_id=SKYCORPS&expedite=0&format=pretty_json'
+    '//sc-api.com/?api_source=live&system=accounts&action=full_profile&target_id=publicFunction&expedite=1&format=pretty_json'
   )
     .then(response => {
       success(response.data);
