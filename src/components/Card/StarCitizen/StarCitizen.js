@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
-import { StringsMix } from './../../../mixins';
+import { StringsMix, DatesMix } from './../../../mixins';
+import OrgsListItem from './OrgsList/OrgsList';
 
 import './StarCitizen.scss';
 import SCApiService from '../../../services/SCApi';
@@ -27,21 +28,13 @@ class StarCitizen extends Component {
         <ul>
           {this.state.person.organizations.map((org, index) => {
             return (
-              <li key={index}>
-                <span className="content">{org.sid}</span>
-                <label>Rank: </label>
-                <span className="content">{org.rank}</span>
-                <label>Stars: </label>
-                <span className="content">{org.stars}</span>
-                <label>Type: </label>
-                <span className="content">{org.type}</span>
-              </li>
+              <OrgsListItem organistation={org} key={index} />
             );
           })}
         </ul>
       );
     } else {
-      return 'No Orgs';
+      return 'No Organisations listed';
     }
   }
 
@@ -50,7 +43,7 @@ class StarCitizen extends Component {
       return (
         <div className={classnames('Star-Citizen', this.props.classes)}>
           <h4>
-            {StringsMix.updateTitle(this.props.classes)} #{
+            {StringsMix.updateTitle(this.props.classes)} {
               this.state.person.citizen_number
             }
           </h4>
@@ -61,8 +54,8 @@ class StarCitizen extends Component {
               </h3>
               <ul>
                 <li>
-                  <label>Enlisted Date: </label>
-                  <span className="content">{this.state.person.enlisted}</span>
+                  <label>Enlistment Date: </label>
+                  <span className="content">{DatesMix.timestampToDate(this.state.person.enlisted, ' ', ['d','M','y'])}</span>
                 </li>
                 <li>
                   <label>Organisations: </label>

@@ -1,0 +1,30 @@
+.OrgsListItem {
+  display: flex;
+  flex: 0 0 60%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  text-indent: 5em;
+  .Content {
+    flex: 0 0 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    font-size: 0.825em;
+    font-weight: 700;
+    text-indent: 10em;
+    h5 {
+      margin: 0;
+      padding: 0;
+      flex: 0 0 100%;
+      font-size: 0.975em;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-content: center;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

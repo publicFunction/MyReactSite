@@ -1,3 +1,7 @@
 import StringsMix from './Strings';
+import DatesMix from './Dates';
 
-export { StringsMix };
+export {
+  StringsMix,
+  DatesMix,
+};
