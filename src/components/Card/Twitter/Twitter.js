@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import classnames from 'classnames';
 import { StringsMix } from './../../../mixins';
 
-import './Twitter.css';
+import './Twitter.scss';
 // import StringsMix from "../../../mixins/Strings";
 
 class Twitter extends Component {

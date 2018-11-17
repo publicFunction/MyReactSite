@@ -5,8 +5,8 @@ import Select from '../../Form/Select/Select';
 // import projectsService from './../../../services/projects';
 import organisationService from './../../../services/organisations';
 
-import './AddProject.css';
-import './../../Form/Form.css';
+import './AddProject.scss';
+import './../../Form/Form.scss';
 
 class AddProject extends Component {
   constructor(props) {

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Default from './Default/Default';
 import Search from './Search/Search';
 
-import './Select.css';
+import './Select.scss';
 
 class Select extends Component {
   addLabel = () => {

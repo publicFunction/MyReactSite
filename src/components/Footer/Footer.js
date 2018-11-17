@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Option from './../Option/Option';
 
-import './Footer.css';
+import './Footer.scss';
 
 class Footer extends Component {
   constructor(props) {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import classnames from 'classnames';
 import { StringsMix } from './../../../mixins';
 
-import './StarCitizen.css';
+import './StarCitizen.scss';
 import SCApiService from '../../../services/SCApi';
 import store from '../../../store';
 

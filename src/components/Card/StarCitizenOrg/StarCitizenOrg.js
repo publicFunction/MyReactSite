@@ -4,7 +4,7 @@ import { StringsMix } from './../../../mixins';
 import store from './../../../store';
 import SCApiService from './../../../services/SCApi';
 
-import './StarCitizenOrg.css';
+import './StarCitizenOrg.scss';
 
 class StarCitizenOrg extends Component {
   constructor(props) {

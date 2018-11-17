@@ -5,8 +5,8 @@ import Select from '../Form/Select/Select';
 // import projectsService from './../../../services/projects';
 import organisationService from '../../services/organisations/index';
 
-import './Button.css';
-import './../../Form/Form.css';
+import './Button.scss';
+import './../../Form/Form.scss';
 
 class Button extends Component {
   constructor(props) {

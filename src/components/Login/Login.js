@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Input from './../Form/Input/input';
-import './Login.css';
+import './Login.scss';
 import x from '../../img/icons/x.svg';
 import avatar from '../../img/icons/avatar-placeholder.svg';
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import classnames from 'classnames';
 import Card from './../Card/Card';
 
-import './Dashboard.css';
+import './Dashboard.scss';
 
 class Dashboard extends Component {
   render() {

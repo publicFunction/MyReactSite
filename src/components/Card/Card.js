@@ -8,7 +8,7 @@ import Squadron42 from './Squadron-42/Squadron-42';
 import Live from './Live/Live';
 import StarCitizenOrg from './StarCitizenOrg/StarCitizenOrg';
 
-import './Card.css';
+import './Card.scss';
 
 class Card extends Component {
   chooseCardType = () => {

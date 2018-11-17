@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import './Input.css';
+import './Input.scss';
 
 class Input extends Component {
   addLabel = () => {

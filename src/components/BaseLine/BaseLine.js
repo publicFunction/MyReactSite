@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 
-import './BaseLine.css';
+import './BaseLine.scss';
 
 class BaseLine extends Component {
   isInverted = () => {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import classnames from 'classnames';
 import { StringsMix } from './../../../mixins';
 
-import './Squadron-42.css';
+import './Squadron-42.scss';
 
 class Squadron42 extends Component {
   render() {

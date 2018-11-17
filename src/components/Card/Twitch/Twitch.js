@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import classnames from 'classnames';
 import { StringsMix } from './../../../mixins';
 
-import './Twitch.css';
+import './Twitch.scss';
 
 class Twitch extends Component {
   render() {

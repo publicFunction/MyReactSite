@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "node-sass": "^4.10.0",
-    "react-scripts": "2.0.5",
+    "react-scripts": "^2.1.1",
     "sass-loader": "^7.1.0"
   },
   "scripts": {

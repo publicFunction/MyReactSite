@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './Dialog.css';
+import './Dialog.scss';
 
 class Dialog extends Component {
   render() {

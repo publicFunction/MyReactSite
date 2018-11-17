@@ -8,13 +8,11 @@ $size: 20px;
   flex-direction: column;
   width: 93px;
   height: 55px;
-  // background-color: transparent;
+  background-color: transparent;
   justify-content: center;
   align-items: center;
   align-content: center;
   position: relative;
-  background-color: plum;
-
   &.Left {
     &:after {
       content: "";
@@ -66,40 +64,71 @@ $size: 20px;
     }
   }
   &.Right {
-    background-color: firebrick;
     &:after {
-
+      content: "";
+      position: absolute;
+      border-top-left-radius: 5px;
+      border-top: 2px solid $baseTextColor;
+      border-left: 2px solid $baseTextColor;
+      top: 0;
+      left: 0.2rem;
+      width: 1.1rem;
+      height: 2.45rem;
     }
     &:before {
-
+      content: '';
+      position: absolute;
+      background-color: transparent;
+      width: 0;
+      height: 0;
+      top: 0;
+      left: 0;
     }
     b {
       width: 0;
       height: 0;
       &:before {
-
+        content: "";
+        position: absolute;
+        top: 48px;
+        left: 0;
+        width: 0;
+        height: 0;
+        transform: rotateZ(45deg);
+        border-top: 2px solid $baseTextColor;
+        border-right: 25px solid $baseTextColor;
       }
       &:after {
-
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 1.25rem;
+        width: 80%;
+        height: 100%;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top: 2px solid $baseTextColor;
+        border-right: 2px solid $baseTextColor;
+        border-bottom: 2px solid $baseTextColor;
       }
     }
   }
   &.Center {
-    background-color: navy;
-    &:after {
-
-    }
-    &:before {
-
-    }
+    &:after {}
+    &:before {}
     b {
       width: 0;
       height: 0;
-      &:before {
-
-      }
+      &:before {}
       &:after {
-
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        border: 2px solid $baseTextColor;
       }
     }
   }

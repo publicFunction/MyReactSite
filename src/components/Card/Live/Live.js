@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import classnames from 'classnames';
 import { StringsMix } from './../../../mixins';
 
-import './Live.css';
+import './Live.scss';
 
 class Live extends Component {
   render() {
