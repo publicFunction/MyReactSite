@@ -3,9 +3,24 @@ import classnames from 'classnames';
 import { StringsMix } from './../../../mixins';
 
 import './Twitter.scss';
-// import StringsMix from "../../../mixins/Strings";
+import TwitterService from './../../../services/twitter';
+import store from "../../../store";
 
 class Twitter extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+    TwitterService.GetLatestTweet();
+  }
+
+  componentDidMount() {
+    store.subscribe(() => {
+      this.setState({
+        person: store.getState().scOrganisations.person
+      });
+    });
+  }
+
   render() {
     return (
       <div className={classnames('Twitter', this.props.classes)}>
