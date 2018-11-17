@@ -1,12 +1,13 @@
 import Axios from 'axios';
-// import store from './../../store';
-// import { setSCOrganisation } from './../../store/scorganisation/actions';
+import store from './../../store';
+import { getLatestTweet } from './../../store/twitter/actions';
+import { lastError } from './../../store/error/actions';
 
 const success = response => {
-  // store.dispatch(setSCOrganisation({ response }));
+  store.dispatch(getLatestTweet({ response }));
 };
 const failed = error => {
-  return error.data;
+  store.dispatch(lastError({ error }));
 };
 
 export default () => {

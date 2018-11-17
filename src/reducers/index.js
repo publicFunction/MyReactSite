@@ -4,6 +4,7 @@ import organisationsReducer from './../store/organisations/reducer';
 import projectsReducer from './../store/projects/reducer';
 import errorReducer from './../store/error/reducer';
 import scOrganisationReducer from './../store/scorganisation/reducer';
+import twitterReducer from './../store/twitter/reducer';
 
 const initialState = {};
 const rootReducer = (state = initialState, action) => state;
@@ -15,6 +16,7 @@ const appReducers = combineReducers({
   projects: projectsReducer,
   errors: errorReducer,
   scOrganisations: scOrganisationReducer,
+  twitter: twitterReducer,
 });
 
 export default appReducers;
