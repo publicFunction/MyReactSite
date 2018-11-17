@@ -12,11 +12,11 @@ class Footer extends Component {
   render() {
     return (
       <footer className="Footer">
-        <Option classes="Health" />
-        <Option classes="Live" />
-        <Option classes="Twitter" />
-        <Option classes="Twitch" />
-        <Option classes="You-Tube" />
+        <Option classes="Health Left" />
+        <Option classes="Live Left" />
+        <Option classes="Twitter Center" />
+        <Option classes="Twitch Right" />
+        <Option classes="You-Tube Right" />
       </footer>
     );
   }

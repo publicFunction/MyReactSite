@@ -7,7 +7,6 @@ class Option extends Component {
   render() {
     return (
       <div className={classnames('Option', this.props.classes)}>
-        {this.props.classes}
         <b />
       </div>
     );

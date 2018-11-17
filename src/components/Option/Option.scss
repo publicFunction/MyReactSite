@@ -8,58 +8,98 @@ $size: 20px;
   flex-direction: column;
   width: 93px;
   height: 55px;
-  background-color: transparent;
+  // background-color: transparent;
   justify-content: center;
   align-items: center;
   align-content: center;
-
   position: relative;
-  &:after {
-    content: "";
-    position: absolute;
-    border-top-right-radius: 5px;
-    border-top: 2px solid $baseTextColor;
-    border-right: 2px solid $baseTextColor;
-    top: 0;
-    left: 4.6rem;
-    width: 1.1rem;
-    height: 2.45rem;
-  }
-  &:before {
-    content: '';
-    position: absolute;
-    background-color: transparent;
-    width: 0;
-    height: 0;
-    top: 0;
-    left: 0;
-  }
-  b {
-    width: 0;
-    height: 0;
-    &:before {
-      content: "";
-      position: absolute;
-      top: 48px;
-      left: 72px;
-      width: 0;
-      height: 0;
-      transform: rotateZ(-45deg);
-      border-top: 2px solid $baseTextColor;
-      border-right: 25px solid $baseTextColor;
-    }
+  background-color: plum;
+  &.Left {
     &:after {
       content: "";
       position: absolute;
+      border-top-right-radius: 5px;
+      border-top: 2px solid $baseTextColor;
+      border-right: 2px solid $baseTextColor;
+      top: 0;
+      left: 4.7rem;
+      width: 1.1rem;
+      height: 2.45rem;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      background-color: transparent;
+      width: 0;
+      height: 0;
       top: 0;
       left: 0;
-      width: 80%;
-      height: 100%;
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
-      border-top: 2px solid $baseTextColor;
-      border-left: 2px solid $baseTextColor;
-      border-bottom: 2px solid $baseTextColor;
+    }
+    b {
+      width: 0;
+      height: 0;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 48px;
+        left: 72px;
+        width: 0;
+        height: 0;
+        transform: rotateZ(-45deg);
+        border-top: 2px solid $baseTextColor;
+        border-right: 25px solid $baseTextColor;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100%;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top: 2px solid $baseTextColor;
+        border-left: 2px solid $baseTextColor;
+        border-bottom: 2px solid $baseTextColor;
+      }
+    }
+  }
+  &.Right {
+    background-color: firebrick;
+    &:after {
+
+    }
+    &:before {
+
+    }
+    b {
+      width: 0;
+      height: 0;
+      &:before {
+
+      }
+      &:after {
+
+      }
+    }
+  }
+  &.Center {
+    background-color: navy;
+    &:after {
+
+    }
+    &:before {
+
+    }
+    b {
+      width: 0;
+      height: 0;
+      &:before {
+
+      }
+      &:after {
+
+      }
     }
   }
 }
