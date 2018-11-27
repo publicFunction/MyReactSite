@@ -11,7 +11,7 @@ const failed = error => {
 
 export default () => {
   return Axios.get(
-    '//sc-api.com/?api_source=live&system=organizations&action=single_organization&target_id=SKYCORPS&expedite=0&format=pretty_json'
+    '//sc-api.com/?api_source=cached&system=organizations&action=single_organization&target_id=SKYCORPS&expedite=0&format=pretty_json'
   )
     .then(response => {
       success(response.data);
