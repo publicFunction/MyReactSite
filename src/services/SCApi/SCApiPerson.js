@@ -11,7 +11,7 @@ const failed = error => {
 
 export default () => {
   return Axios.get(
-    '//sc-api.com/?api_source=cached&system=accounts&action=full_profile&target_id=publicFunction&expedite=1&format=pretty_json'
+    '//sc-api.com/?api_source=cache&system=accounts&action=full_profile&target_id=publicFunction&expedite=1&format=pretty_json'
   )
     .then(response => {
       success(response.data);
