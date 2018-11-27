@@ -24,15 +24,17 @@ class StarCitizen extends Component {
 
   renderOrgList() {
     if (Object.keys(this.state.person).length > 0) {
-      return (
-        <ul>
-          {this.state.person.organizations.map((org, index) => {
-            return (
-              <OrgsListItem organistation={org} key={index} />
-            );
-          })}
-        </ul>
-      );
+      if (this.state.person.organizations !== null) {
+        return (
+          <ul>
+            {this.state.person.organizations.map((org, index) => {
+              return (
+                <OrgsListItem organistation={org} key={index} />
+              );
+            })}
+          </ul>
+        );
+      }
     } else {
       return 'No Organisations listed';
     }
