@@ -1,7 +1,7 @@
 {
-    "consumerKey": "ERDt8hvydYeT8ZpC6Z3HRmYHH",
-    "consumerSecret": "iRCstHiaVE5BfYIZUDGcWJ0LLYmYVp0RzXY1g1leET89Ni4e8s",
-    "accessToken": "121380883-yAZRtngQX5Ab86BaDDjJndKqjJll0GB2vfcH7bdl",
-    "accessTokenSecret": "iRCstHiaVE5BfYIZUDGcWJ0LLYmYVp0RzXY1g1leET89Ni4e8s",
+    "consumerKey": "",
+    "consumerSecret": "",
+    "accessToken": "",
+    "accessTokenSecret": "",
     "callBackUrl": "http://localhost:3000"
 }
